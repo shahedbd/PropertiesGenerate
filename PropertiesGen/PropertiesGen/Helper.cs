@@ -47,6 +47,8 @@ namespace PropertiesGen
             {
                 case "bigint":
                     return "long";
+                case "varchar":
+                    return "string";
                 case "nvarchar":
                     return "string";
                 case "nchar":
@@ -95,7 +97,7 @@ namespace PropertiesGen
             {
                 throw ex;
             }
-            
+
         }
 
 
